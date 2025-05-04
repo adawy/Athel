@@ -2,9 +2,13 @@ $(document).ready(function () {
     $('.openNav').click(function () {
         $(this).parent().find('.menu').addClass('openNavDiv');
     })
-    $('.closeNav').click(function () {
+    $('.closeNav').click(function (e) {
+        e.preventDefault();
         $(this).parent().removeClass('openNavDiv');
     })
+    $('header .navContainer .nav a').click(function(e){
+        $('.menu').removeClass('openNavDiv')
+    });
     $(window).on('scroll', function () {
         if ($(this).scrollTop() > 20) {
             $('header').addClass('scrolled');
