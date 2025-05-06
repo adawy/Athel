@@ -334,6 +334,9 @@ header.scrolled .navContainer .nav a {
     padding: 40px 0;
     gap: 40px;
     position: relative;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
 }
 
 .ceoWord .ceoShep {
@@ -346,7 +349,7 @@ header.scrolled .navContainer .nav a {
 }
 
 .ceoWord .ceoName {
-    width: 345px;
+    width: 365px;
 }
 
 .ceoWord .ceoImg::after {
@@ -813,7 +816,7 @@ footer .footerContainer img.logoSvg {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: center;
+        text-align: right;
     }
 }
 @media(max-width:360px){
